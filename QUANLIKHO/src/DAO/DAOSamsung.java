@@ -129,13 +129,7 @@ public class DAOSamsung implements DAOInterface <Samsung> {
             
             String selectSql = "SELECT* FROM SAMSUNG";
             ResultSet rs = stm.executeQuery(selectSql);
-            System.out.println("Nhap so lan muon xuat san pham: ");
-            int n = input.nextInt();
-            input.nextLine();
-            
-            for (int i=1; i<=n; i++)
-            {   System.out.println("-----Lan xoa thu " +i+"-----");
-                
+          
                 
                 System.out.println("Nhap ma Samsung: ");
                 String ma = input.nextLine();
@@ -145,7 +139,7 @@ public class DAOSamsung implements DAOInterface <Samsung> {
 
                 rows = stm.executeUpdate(sqlInsert);
                 
-            }
+            
                 
        
             connection.close();
