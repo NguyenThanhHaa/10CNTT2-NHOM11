@@ -172,13 +172,7 @@ public class DAOXiaomi implements DAOInterface <Xiaomi>
             
             String selectSql = "SELECT* FROM XIAOMI";
             ResultSet rs = stm.executeQuery(selectSql);
-            System.out.println("Nhap so lan muon xuat san pham: ");
-            int n = input.nextInt();
-            input.nextLine();
-            
-            for (int i=1; i<=n; i++)
-            {   System.out.println("-----Lan xoa thu " +i+"-----");
-                
+          
                 
                 System.out.println("Nhap ma Xiaomi: ");
                 String ma = input.nextLine();
@@ -188,7 +182,7 @@ public class DAOXiaomi implements DAOInterface <Xiaomi>
 
                 rows = stm.executeUpdate(sqlInsert);
                 
-            }
+            
                 
        
             connection.close();
